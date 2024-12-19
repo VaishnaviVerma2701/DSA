@@ -7,6 +7,8 @@ class pq{
         pq.add(5);
         pq.add(7);
         pq.add(9);
+        pq.add(12);
+        pq.add(10);
 
 //print queue
         System.out.println(pq);
@@ -25,11 +27,13 @@ class pq1{
         PriorityQueue<Integer>pq= new PriorityQueue<>(Collections.reverseOrder());
         //add
         pq.add(5);
-        pq.add(7);
+        pq.add(7);                                 
         pq.add(9);
+        pq.add(12);
+        pq.add(10);
 
-//print queue
-        System.out.println(pq);
+//print queue                                          
+        System.out.println(pq);                           
         //remove the element
         System.out.println(pq.remove());
         System.out.println(pq);

@@ -13,17 +13,18 @@ class linked{
     //insert(30,head,3);
     //}
     void insert(int data,Node head,int posi){
-        Node temp=new Node(data);
+        Node temp=new Node(data); 
         if(posi==0){
 temp.next=head;
 head=temp;
         }
-        Node cur=head;
-        for(int i=0;i<posi-1;i++){
-            cur=cur.next;
-        }
+        Node cur=head; 
+        for(int i=0;i<posi-1;i++){ 
+            cur=cur.next;                
+        }  
         temp.next=cur.next;
         cur.next=temp;
+      
 
     }
 
@@ -50,14 +51,11 @@ head=temp;
 public static void main(String[] args){
     linked l=new linked();
     l.head=new Node(10);
-    // l.head.next=new Node(20);
-    // l.head.next.next=new Node(40);
-    // l.head.next.next.next=new Node(50);
-
-    l.insert(1,head,1);    
-    l.insert(20,head,2);
-    l.insert(40,head,3);
-    l.insert(30,head,3);
+     l.head.next=new Node(20);
+     l.head.next.next=new Node(40);
+     l.head.next.next.next=new Node(50);
+     
+     l.insert(1,head,2);    
 
      l.printlist(head);
      System.out.println();
@@ -352,3 +350,6 @@ ListNode current = head;
         return head;
     }
 }
+
+
+

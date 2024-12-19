@@ -5,6 +5,7 @@ class stack{
    public void  push(int x){
      top++;
 stack[top]=x;
+
 if(top==stack.length-1){
     System.out.println("stack in overflow");
 }
@@ -72,7 +73,7 @@ if(top==stack.length-1){
             System.out.println("stack is underflow");
         }
         //return popped;
-         System.out.print(stack[top]);
+         System.out.println(stack[top]);
     }
   public int  peek(){
     //return stack[top];
@@ -100,6 +101,7 @@ if(top==stack.length-1){
 
        st.pop();
     //   st.printstack1();
+    System.out.println();
 
 System.out.println(st.peek());
        }  

@@ -5,6 +5,7 @@ int mincost(int[]a){
     for(int i=0;i<a.length;i++){
         pq.add(a[i]);
     }
+    System.out.println(pq);
     int ans=0;
     while(pq.size()>1){
         int first=pq.remove();
